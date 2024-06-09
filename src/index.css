@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navbar-height: 68px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+
+  /* border: 1px solid red; */
+}
+
+.app-container {
+  height: 100dvh;
+}
+
+.upper-container > *,
+.lower-container > * {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.page-container {
+  min-height: 100%;
+}
+
+.lower-container {
+  height: calc(100% - var(--navbar-height));
+  overflow-y: auto;
+  /* border: 1px solid green; */
+}
+
+footer {
+  height: 50px;
+}
